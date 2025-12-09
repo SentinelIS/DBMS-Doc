@@ -19,13 +19,15 @@
 # in the templates via {{ site.myvariable }}.
 
 title: IsentaDB Documentation
+logo: "/assets/images/icon.png"
+subtitle: Relational Database Management System
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   The official Documentation for the SentinelIS IsentaDB.
   IsentaDB Relational Database
   SentinelIS on Github by nathanschmid08
   IsentaDB on Github by nathanschmid08
-baseurl: "/Core-Doc" # the subpath of your site, e.g. /blog
+baseurl: "/DBMS-Doc" # the subpath of your site, e.g. /blog
 url: "https://sentinelis.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
@@ -34,6 +36,23 @@ github_username:  jekyll
 theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
+
+# minimal mistakes settings
+minimal_mistakes_skin: default
+minimal_mistakes_skin: "default"
+sass:
+  load_paths:
+    - _sass
+    - assets/css
+
+# Activates large sidebar
+sidebar:
+  nav: "docs"     
+
+toc:
+  enabled: true
+  heading: "On this page"
+  ordered: false
 
 # Exclude from processing.
 # The following items will not be processed, by default.
